@@ -4,86 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#timeline"><i class="fas fa-history"></i> Timeline</a></li>
+                <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+            </ul>
+            <div class="dark-mode-toggle"><i class="fas fa-moon"></i></div>
+        </nav>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio website! I am a passionate web developer with a keen eye for design.</p>
-            <p>I specialize in creating beautiful, responsive websites and web applications using modern technologies.
-            </p>
+            <p><img src="profile.jpg" alt="Profile Picture" class="profile-pic"></p>
+            <p>Your introduction goes here.</p>
         </div>
     </section>
+    <hr>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="skills">
         <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-items">
-                <div class="portfolio-item">
-                    <img src="portfolio-item-1.jpg" alt="Portfolio Item 1">
-                    <h3>Project Title</h3>
-                    <p>Description of the project goes here.</p>
+            <h2>Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
                 </div>
-                <div class="portfolio-item">
-                    <img src="portfolio-item-2.jpg" alt="Portfolio Item 2">
-                    <h3>Project Title</h3>
-                    <p>Description of the project goes here.</p>
+                <div class="card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
                 </div>
-                <!-- Add more portfolio items as needed -->
+                <div class="card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="card">
+                    <i class="fab fa-cplusplus"></i>
+                    <h3>C</h3>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - Present</div>
+                        <h3>Web Developer at ABC Company</h3>
+                        <p>I work on various web projects, collaborating with designers and developers to create
+                            user-friendly interfaces.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015 - 2018</div>
+                        <h3>Freelance Web Developer</h3>
+                        <p>I started my career as a freelance web developer, working on projects for small businesses
+                            and startups.</p>
+                    </div>
+                </div>
+                <!-- Add more timeline items as needed -->
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2</p>
+                </div>
+                <!-- Add more projects as needed -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me using the form below or via email at example@example.com</p>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
