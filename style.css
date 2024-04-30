@@ -157,6 +157,9 @@ footer i {
 
 .timeline-content {
     flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .timeline-date {
