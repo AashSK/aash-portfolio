@@ -90,7 +90,13 @@ hr {
     margin: 10px;
     text-align: center;
     width: 200px;
+    transition: transform 0.3s ease;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
 
 .card i {
     font-size: 2em;
