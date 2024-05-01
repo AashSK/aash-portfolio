@@ -159,6 +159,7 @@ footer i {
     flex: 1;
     padding: 15px;
     border-radius: 10px;
+    background-color: var(--secondary-color);
 }
 
 .timeline-date {
@@ -241,7 +242,7 @@ footer i {
 }
 
 .intermediate {
-    background-color: var(--secondary-color)fcc;
+    background-color: #ffffcc;
     color: #999900;
 }
 
