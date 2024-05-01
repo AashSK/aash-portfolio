@@ -6,16 +6,16 @@ html {
 
 :root {
     --primary-color: #24292e;
-    --secondary-color: #fff;
-    --dark-color: #222;
-    --light-color: #f2f2f2;
+    --secondary-color: var(--secondary-color);
+    --dark-color: #111;
+    --light-color: var(--light-color);
 }
 
 body {
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* Better font display */
-    background-color: #f2f2f2;
+    background-color: var(--light-color);
     color: var(--primary-color);
     transition: background-color 0.5s, color 0.5s;
     margin: 0;
@@ -27,7 +27,7 @@ header {
     left: 0;
     position: sticky;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
     padding: 20px 0;
     z-index: 100;
 }
@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-links li a {
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ hr {
 }
 
 .dark hr {
-    background: #fff;
+    background: var(--secondary-color);
 }
 
 .container {
@@ -90,7 +90,7 @@ hr {
 }
 
 .card {
-    background-color: #fff;
+    background-color: var(--secondary-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 20px;
@@ -116,18 +116,18 @@ hr {
 
 footer {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
     text-align: center;
     padding: 20px 0;
 }
 
 footer i {
     font-size: 2em;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .dark footer i {
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .dark-mode-toggle {
@@ -178,44 +178,44 @@ footer i {
 /* Dark mode */
 .dark {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .dark header {
-    background-color: #222;
+    background-color: var(--dark-color);
 }
 
 .dark nav {
-    background-color: #222;
+    background-color: var(--dark-color);
 }
 
 .dark .nav-links li a {
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .dark .card {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .dark .card i {
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .dark .timeline-item::after {
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
 
 .dark .timeline-content {
     background-color: var(--primary-color);
-    border-color: #fff;
-    color: #fff;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .dark .timeline-dot {
     width: 20px;
     height: 20px;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -223,7 +223,7 @@ footer i {
 .dark .timeline-date {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .skill-level {
@@ -239,7 +239,7 @@ footer i {
 }
 
 .intermediate {
-    background-color: #ffffcc;
+    background-color: var(--secondary-color)fcc;
     color: #999900;
 }
 
