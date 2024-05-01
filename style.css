@@ -9,14 +9,13 @@ html {
     --secondary-color: #fff;
     --dark-color: #111;
     --light-color: #f2f2f2;
-    /*#f2f2f2*/
 }
 
 body {
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* Better font display */
-    background-color: var(--light-color);
+    background-color: #f2f2f2;
     color: var(--primary-color);
     transition: background-color 0.5s, color 0.5s;
     margin: 0;
@@ -63,7 +62,7 @@ section {
 }
 
 section h2 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -158,7 +157,6 @@ footer i {
 
 .timeline-content {
     flex: 1;
-    background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
 }
@@ -198,7 +196,7 @@ footer i {
 }
 
 .dark .card {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     color: var(--secondary-color);
 }
 
@@ -211,7 +209,7 @@ footer i {
 }
 
 .dark .timeline-content {
-    background-color: var(--primary-color);
+    background-color: var(--dark-color);
     border-color: var(--secondary-color);
     color: var(--secondary-color);
 }
