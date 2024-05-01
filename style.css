@@ -6,9 +6,10 @@ html {
 
 :root {
     --primary-color: #24292e;
-    --secondary-color: var(--secondary-color);
+    --secondary-color: #fff;
     --dark-color: #111;
-    --light-color: var(--light-color);
+    --light-color: #f2f2f2;
+    /*#f2f2f2*/
 }
 
 body {
