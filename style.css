@@ -46,10 +46,7 @@ nav {
 .nav-links {
     list-style-type: none;
     display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
+    gap: 20px;
 }
 
 .nav-links li a {
@@ -249,4 +246,48 @@ footer i {
 .advanced {
     background-color: #ccffcc;
     color: #009900;
+}
+
+@media screen and (max-width: 768px) {
+    #ha-toggle {
+        display: block;
+    }
+
+    nav .fa-bars {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    nav .fa-times {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    nav.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        position: fixed;
+        gap: 0;
+        top: 53px;
+        background-color: #333;
+        padding: 15px 0 15px 0;
+        left: 0;
+        border-top: #fff 1px solid;
+    }
+
+    nav.active .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0 15px 0;
+    }
+
+    nav.active .nav-links li:hover {
+        background-color: #24292e;
+    }
 }
