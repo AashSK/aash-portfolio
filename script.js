@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     darkModeToggle.addEventListener('click', () => {
         body.classList.toggle('dark');
+        if (body.classList.contains('dark')) {
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
     });
 
     hatoggle.addEventListener('click', () => {
