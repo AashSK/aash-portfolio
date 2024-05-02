@@ -54,6 +54,15 @@ nav {
     text-decoration: none;
 }
 
+.toggles {
+    display: flex;
+    gap: 20px;
+}
+
+nav #ha-toggle {
+    display: none;
+}
+
 section {
     padding: 50px 0;
 }
@@ -249,7 +258,7 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
-    #ha-toggle {
+    nav #ha-toggle {
         display: block;
     }
 
@@ -275,7 +284,7 @@ footer i {
         position: fixed;
         gap: 0;
         top: 53px;
-        background-color: #333;
+        background-color: var(--primary-color);
         padding: 15px 0 15px 0;
         left: 0;
         border-top: #fff 1px solid;
@@ -288,6 +297,6 @@ footer i {
     }
 
     nav.active .nav-links li:hover {
-        background-color: #24292e;
+        background-color: #111;
     }
 }
