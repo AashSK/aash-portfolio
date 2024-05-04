@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Photo Editor</title>
+    <link rel="stylesheet" href="/aash-portfolio/projects/Photo-Editor/css/main.css">
+</head>
+
+<body>
+    <div><input id="fileloadinput" class="button" type="file" accept="image/png, image/jpeg" /></div>
+
+    <div><canvas id="canvas"></canvas></div>
+    <div>
+        <p>Effekte:</p>
+        <button class="button" onclick="getGraustufe()">Graustufe</button>
+        <button class="button" onclick="getSchwarzWeiss()">Schwarzweiß</button>
+        <button class="button" onclick="negativ()">Negativ</button>
+        <button class="button" onclick="kantenerkennung()">Kantenerkennung</button>
+    </div>
+
+    <div>
+        <p>Anpassen:</p>
+        <button class="button" onclick="helligkeit()">Helligkeit+</button>
+        <button class="button" onclick="helligkeitSenken()">Helligkeit-</button>
+        <button class="button" onclick="kontrast()">Kontrast+</button>
+        <button class="button" onclick="kontrastSenken()">Kontrast-</button>
+        <button class="button" onclick="rot()">Rot+</button>
+        <button class="button" onclick="rotminus()">Rot-</button>
+        <button class="button" onclick="grün()">Grün+</button>
+        <button class="button" onclick="grünminus()">Grün-</button>
+        <button class="button" onclick="blau()">Blau+</button>
+        <button class="button" onclick="blauminus()">Blau-</button>
+
+    </div>
+
+    <div>
+        <p>Ausrichten:</p>
+        <button class="button" onclick="rotationL()">Rotation links</button>
+        <button class="button" onclick="rotationR()">Rotation Rechts</button>
+        <button class="button" onclick="horizontal()">Horizontal</button>
+        <button class="button" onclick="vertikal()">Vertikal</button>
+    </div>
+    <div>
+        <p>Größe:</p>
+        <button class="button" onclick="verdoppelung()">Verdoppeln</button>
+        <button class="button" onclick="halbieren()">Halbieren</button>
+    </div>
+
+    <div>
+        <!--<a class="button" id="downloadLnk" download="img.jpg">Bild speichern</a>-->
+        <button class="button" onclick="revert()">Wiederherstellen</button>
+        <button class="button" id="delete">Entfernen</button>
+        <button type="button" id="dlButton" class="button">Download</button>
+    </div>
+
+    <script src="/aash-portfolio/projects/Photo-Editor/js/script.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/grauschwarz.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/helligkeit.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/kontrast.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/rotation.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/dynamisch.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/verdoppelung.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/kantenerkenneung.js"></script>
+    <script src="/aash-portfolio/projects/Photo-Editor/js/hv.js"></script>
+</body>
+
+
+</html>
