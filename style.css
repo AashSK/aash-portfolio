@@ -56,8 +56,6 @@ nav {
     text-decoration: underline;
 }
 
-
-
 .toggles {
     display: flex;
     gap: 20px;
@@ -80,6 +78,27 @@ img {
     border-radius: 50%;
     max-width: 100%;
     height: auto;
+}
+
+#bild {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+#bild::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 45%, rgba(0, 0, 0, 1) 100%);
+}
+
+#bild img {
+    display: block;
 }
 
 #introh1 {
@@ -357,8 +376,6 @@ footer i {
 #projects img {
     border-radius: 25px;
 }
-
-#projects .card {}
 
 @media screen and (max-width: 768px) {
 
