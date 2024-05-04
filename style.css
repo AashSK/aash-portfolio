@@ -70,9 +70,26 @@ section h2 {
     text-align: center;
 }
 
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+}
+
 #aboutsection {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 hr {
@@ -262,6 +279,18 @@ footer i {
 }
 
 @media screen and (max-width: 768px) {
+
+    #intro {
+        height: 83vh;
+        text-align: center;
+    }
+
+    #profile {
+        gap: 5px;
+        height: 55vh;
+        align-items: center;
+    }
+
     nav #ha-toggle {
         display: block;
     }
