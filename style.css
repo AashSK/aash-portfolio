@@ -377,6 +377,10 @@ footer i {
     border-radius: 25px;
 }
 
+#projects .card {
+    width: calc(25% - 5px);
+}
+
 @media screen and (max-width: 768px) {
 
     #intro {
