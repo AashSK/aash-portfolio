@@ -1,6 +1,6 @@
 .vscode/
 # JPEG
-*.jpg
+#*.jpg
 *.jpeg
 *.jpe
 *.jif
