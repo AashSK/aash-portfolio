@@ -160,6 +160,7 @@ img {
     justify-content: center;
     text-align: center;
     gap: 10px;
+    overflow-x: hidden;
 }
 
 #profile i {
