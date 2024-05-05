@@ -160,7 +160,6 @@ img {
     justify-content: center;
     text-align: center;
     gap: 10px;
-    overflow-x: hidden;
 }
 
 #profile i {
@@ -436,5 +435,11 @@ footer i {
 
     nav.active .nav-links li:hover {
         background-color: #111;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #profile {
+        overflow-x: hidden;
     }
 }
