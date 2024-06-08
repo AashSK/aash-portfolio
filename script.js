@@ -33,6 +33,18 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             hamtoggle.innerHTML = '<i class="fas fa-bars"></i>';
         }
-
     });
+
+    const content = document.querySelectorAll('.timeline-content');
+
+    const onIntersection = (entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade');
+            }
+        }
+    };
+
+    const observer = new IntersectionObserver(onIntersection);
+    content.forEach((item) => observer.observe(item));
 });
