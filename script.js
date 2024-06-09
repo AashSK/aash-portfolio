@@ -35,16 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    const content = document.querySelectorAll('.timeline-content');
-
-    const onIntersection = (entries) => {
-        for (const entry of entries) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const cl = entry.target.classList;
+            if (entry.isIntersecting && cl.length < 2) {
+                cl.add(cl.contains('card') ? 'slide' : 'fade');
             }
-        }
-    };
+        });
+    });
 
-    const observer = new IntersectionObserver(onIntersection);
-    content.forEach((item) => observer.observe(item));
+    document.querySelectorAll('.timeline-content, .card').forEach((item) => observer.observe(item));
 });
