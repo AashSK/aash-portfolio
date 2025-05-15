@@ -393,8 +393,10 @@ footer i {
 }
 
 .basic {
-    background-color: #ffcccc;
-    color: #cc0000;
+    background-color: #ffe0c6;
+    /* Light orange */
+    color: #cc8800;
+    /* Darker orange for the text */
 }
 
 .intermediate {
